@@ -6,12 +6,12 @@ import Foundation
 import UIKit
 import MobileCoreServices
 
-protocol UploadProgressDelegate {
+public protocol UploadProgressDelegate {
     func didReceivedProgress(progress:Float)
     func didFailToUpload(error: String)
 }
 
-protocol DownloadProgressDelegate {
+public protocol DownloadProgressDelegate {
     func didReceivedDownloadProgress(progress:Float, filename:String)
     func didFailedDownload(filename:String)
 }
