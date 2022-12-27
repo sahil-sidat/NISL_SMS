@@ -19,8 +19,8 @@ protocol DownloadProgressDelegate {
 public class RequestManager {
     
     // MARK: - Vars & Lets
-    var delegate : UploadProgressDelegate?
-    var downloadDelegate : DownloadProgressDelegate?
+    public var delegate : UploadProgressDelegate?
+    public var downloadDelegate : DownloadProgressDelegate?
     
     private let sessionManager: SessionManager
     private let retrier: RequestManagerRetrier
