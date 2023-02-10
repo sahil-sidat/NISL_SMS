@@ -118,7 +118,7 @@ public class RequestManager {
                     } else if let value = value as? URL {
                         do {
                             let mimeType = value.getMimeType()
-                            let valueData = try Data (contentsOf: value, options: .mappedIfSafe)
+                            let valueData = try Data (contentsOf: value) //, options: .mappedIfSafe)
                             multipartFormData.append(
                                 valueData,
                                 withName: key,
